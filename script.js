@@ -1,3 +1,5 @@
+
+
 // GSAP Animations
 gsap.from(".navbar", { duration: 1, y: -50, opacity: 0 });
 gsap.from(".home-text h1", { duration: 1.2, x: -100, opacity: 0, delay: 0.3 });
@@ -18,15 +20,24 @@ gsap.utils.toArray("section").forEach(section => {
 
 // Typing Effect
 new Typed("#typing", {
-  strings: ["Frontend Developer 💻", "Designer 🎨", "Coder 👩‍💻", "Tech Enthusiast 🚀"],
-  typeSpeed: 80,
-  backSpeed: 50,
-  backDelay: 1500,
-  loop: true
+    strings: [
+        "✨ Software Developer ✨",
+        "☕ Java Developer ☕"
+    ],
+    typeSpeed: 70,      // typing speed fast & attractive
+    backSpeed: 60,      // smooth erase
+    backDelay: 1200,    // little pause before erase
+    smartBackspace: true,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|",    // stylish cursor
 });
+
+
 
 // Contact form
 document.getElementById("contactForm").addEventListener("submit", function(e){
   e.preventDefault();
   alert("Thank you! Your message has been sent.");
 });
+
